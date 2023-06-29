@@ -70,12 +70,12 @@ let headers = parse[0].split(",");
 let dataTable = [];
 
 for (i = 1; i < parse.length; i++){
-    let rowArray = parse[i].split(",");
-    let rowObject = {
+    const rowArray = parse[i].split(",");
+    const rowObject = {
         name: rowArray[0],
         age: rowArray[1],        
     };
-    dataTable.push(rowArray);
+    dataTable.push(rowObject);
 };
 
 console.log(dataTable);
