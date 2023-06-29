@@ -4,9 +4,10 @@ console.log("Hello World!\n==========\n");
 console.log("EXERCISE 1:\n==========\n");
 
 const numbers = [2, 22, 12, 17, 18, 39, 129];
-let sum = 0;
+
 
 function arraySum(numbers){
+    let sum = 0;
     numbers.forEach(number => {
         sum += number;
     });
@@ -43,12 +44,12 @@ console.log("EXERCISE 3:\n==========\n");
 
 //create variables+arrays
 let sentence = "The quick brown fox jumps over the lazy dog";
-let array = sentence.split(" ");
-let newArray = [];
+const array = sentence.split(" ");
+const newArray = [];
 
 //array loop, take string => split words into data, reverse data, push data to empty array
 array.forEach(word => {
-    let characters = word.split("");
+    const characters = word.split("");
     characters.reverse();
     newArray.push(characters.join(""));
 });
