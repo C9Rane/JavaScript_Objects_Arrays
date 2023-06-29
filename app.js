@@ -67,7 +67,7 @@ let csvData = "name,age\nFrodo,50\nSam,38\nMerry,36\nPippin,26";
 //parse into an array of rows V then rows into headers
 let parse = csvData.split("\n");
 let headers = parse[0].split(",");
-let dataTable = [];
+const dataTable = [];
 
 for (i = 1; i < parse.length; i++){
     const rowArray = parse[i].split(",");
